@@ -2,7 +2,7 @@
 
 ## Demo
 
-- Screenshot: `demo.png`
+![Demo screenshot](demo.png)
 
 ## Structure
 
