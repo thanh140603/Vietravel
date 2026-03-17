@@ -1,0 +1,181 @@
+.page {
+  --bg: #0b1020;
+  --panel: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.12);
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.65);
+  --danger: #ff6b6b;
+
+  min-height: 100vh;
+  font-family: var(--font-geist-sans);
+  background: radial-gradient(
+      1200px 600px at 20% 10%,
+      rgba(102, 187, 255, 0.25),
+      transparent 55%
+    ),
+    radial-gradient(
+      900px 500px at 80% 0%,
+      rgba(211, 107, 255, 0.18),
+      transparent 45%
+    ),
+    var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  padding: 48px 20px;
+}
+
+.main {
+  width: 100%;
+  max-width: 920px;
+  display: grid;
+  gap: 16px;
+}
+
+.authMain {
+  max-width: 520px;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.authHeader {
+  text-align: center;
+  justify-items: center;
+}
+
+.authCard {
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  gap: 6px;
+}
+
+.title {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 650;
+  letter-spacing: -0.8px;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.state {
+  padding: 16px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 14px;
+  color: var(--muted);
+}
+
+.card {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.92);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.list {
+  display: grid;
+  gap: 12px;
+}
+
+.tourCard {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 14px;
+  padding: 14px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px 14px;
+}
+
+.tourName {
+  font-weight: 650;
+  letter-spacing: -0.2px;
+}
+
+.tourMeta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.price {
+  font-weight: 750;
+  font-size: 16px;
+  align-self: start;
+}
+
+.priceNote {
+  color: var(--muted);
+  font-size: 12px;
+  text-align: right;
+}
+
+.error {
+  padding: 16px;
+  border: 1px solid rgba(255, 107, 107, 0.35);
+  background: rgba(255, 107, 107, 0.08);
+  border-radius: 14px;
+}
+
+.errorTitle {
+  font-weight: 600;
+  color: var(--danger);
+  margin-bottom: 8px;
+}
+
+.errorBody {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: var(--font-geist-mono);
+  font-size: 12px;
+}
+
